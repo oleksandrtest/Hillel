@@ -17,7 +17,7 @@ public class MAin {
         dog.swim(400);
 
         for (int i = 0; i < 0; i++) {
-            new Enimal();
+            new Animal();
         }
         for (int i = 0; i < 0; i++) {
             new Cat();
@@ -29,6 +29,6 @@ public class MAin {
 
         System.out.println(Dog.number);
 
-        System.out.println(Enimal.number);
+        System.out.println(Animal.number);
     }
 }

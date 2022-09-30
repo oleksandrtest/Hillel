@@ -1,4 +1,4 @@
-public class Dog extends Enimal {
+public class Dog extends Animal {
 
     static int number;
 

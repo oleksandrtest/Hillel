@@ -1,10 +1,10 @@
-public class Enimal {
+public class Animal {
 
     static int number;
 
     private String name;
 
-    public Enimal() {
+    public Animal() {
         number++;
     }
 

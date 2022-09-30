@@ -1,4 +1,4 @@
-public class Cat extends Enimal {
+public class Cat extends Animal {
 
     static int number;
     private final int runDistanceMax =  200;
