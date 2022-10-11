@@ -1,18 +1,14 @@
-package two;
+package barrier;
 
 
 public class Treadmill implements Barrier {
-
     private int length;
-
     public Treadmill(int length) {
         this.length = length;
     }
-
     public int getLength() {
         return length;
     }
-
     @Override
     public String overcome(Participant participant) {
         participant.setResult(participant.getMaxLength() >= getLength());

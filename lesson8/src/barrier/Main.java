@@ -1,4 +1,4 @@
-package two;
+package barrier;
 public class Main {
 
     public static void main(String[] args) {
@@ -17,9 +17,7 @@ public class Main {
 
         Participant[] participants = {cat, human, robot};
         Barrier[] barriers = {treadmill, wall, treadmill1, wall1, treadmill2, wall2};
-
         for (int i = 0; i < participants.length; i++) {
-
             for (Barrier bar: barriers) {
                 if (participants[i].getResult()) {
                     System.out.println(bar.overcome(participants[i]));

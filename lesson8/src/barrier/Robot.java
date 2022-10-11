@@ -1,18 +1,18 @@
-package two;
+package barrier;
 
-public class Cat implements Participant {
+public class Robot implements Participant {
 
     private String name;
     private int maxLength;
     private int maxHeight;
     private boolean result = true;
 
-
-    public Cat(String name, int maxLength, int maxHeight) {
+    public Robot(String name, int maxLength, int maxHeight) {
         this.name = name;
         this.maxLength = maxLength;
         this.maxHeight = maxHeight;
     }
+
     @Override
     public String getName() {
         return name;
@@ -55,5 +55,3 @@ public class Cat implements Participant {
             return name + " не може стрибнути на " + maxHeight + " метрів.";
     }
 }
-
-

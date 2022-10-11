@@ -1,19 +1,17 @@
-package two;
+package barrier;
 
-public class Human implements Participant {
+public class Cat implements Participant {
 
     private String name;
     private int maxLength;
     private int maxHeight;
     private boolean result = true;
 
-
-    public Human(String name, int maxLength, int maxHeight) {
+    public Cat(String name, int maxLength, int maxHeight) {
         this.name = name;
         this.maxLength = maxLength;
         this.maxHeight = maxHeight;
     }
-
     @Override
     public String getName() {
         return name;
@@ -39,6 +37,7 @@ public class Human implements Participant {
         this.result = result;
     }
 
+
     @Override
     public String run(Treadmill treadmill) {
         if (treadmill.getLength() <= maxLength)
@@ -55,3 +54,5 @@ public class Human implements Participant {
             return name + " не може стрибнути на " + maxHeight + " метрів.";
     }
 }
+
+

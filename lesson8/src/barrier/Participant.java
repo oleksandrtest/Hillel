@@ -1,4 +1,4 @@
-package two;
+package barrier;
 
 
 public interface Participant {

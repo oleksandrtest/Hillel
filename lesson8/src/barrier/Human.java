@@ -1,6 +1,6 @@
-package two;
+package barrier;
 
-public class Robot implements Participant {
+public class Human implements Participant {
 
     private String name;
     private int maxLength;
@@ -8,7 +8,7 @@ public class Robot implements Participant {
     private boolean result = true;
 
 
-    public Robot(String name, int maxLength, int maxHeight) {
+    public Human(String name, int maxLength, int maxHeight) {
         this.name = name;
         this.maxLength = maxLength;
         this.maxHeight = maxHeight;
@@ -38,7 +38,6 @@ public class Robot implements Participant {
     public void setResult(Boolean result) {
         this.result = result;
     }
-
 
     @Override
     public String run(Treadmill treadmill) {

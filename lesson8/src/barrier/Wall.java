@@ -1,16 +1,13 @@
-package two;
+package barrier;
 
 public class Wall implements Barrier {
-
     private int height;
-
     private String name;
 
     public Wall(int height, String name) {
         this.height = height;
         this.name = name;
     }
-
     public int getHeight() {
         return height;
     }
