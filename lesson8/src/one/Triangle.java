@@ -3,15 +3,11 @@ package one;
 import one.Shape;
 
 public class Triangle implements Shape {
-
-    private final int a = 34;
-    private final int b = 56;
-
-
+    private final int sideA = 34;
+    private final int sideB = 56;
 
     @Override
     public int area() {
-
-        return a * b;
+        return sideA * sideB;
     }
 }

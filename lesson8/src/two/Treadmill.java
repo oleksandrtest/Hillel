@@ -4,11 +4,9 @@ package two;
 public class Treadmill implements Barrier {
 
     private int length;
-
     public Treadmill(int length) {
         this.length = length;
     }
-
     public int getLength() {
         return length;
     }

@@ -1,9 +1,9 @@
 package one;
 
 public class Square implements Shape {
-    private final int a = 45;
+    private final int side = 45;
 
     public int area() {
-        return a * a;
+        return side * side;
     }
 }
