@@ -7,6 +7,7 @@ public class Cat implements Participant {
     private int maxHeight;
     private boolean result = true;
 
+
     public Cat(String name, int maxLength, int maxHeight) {
         this.name = name;
         this.maxLength = maxLength;

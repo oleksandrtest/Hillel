@@ -7,6 +7,7 @@ public class Robot implements Participant {
     private int maxHeight;
     private boolean result = true;
 
+
     public Robot(String name, int maxLength, int maxHeight) {
         this.name = name;
         this.maxLength = maxLength;
