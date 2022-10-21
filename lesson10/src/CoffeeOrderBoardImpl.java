@@ -18,12 +18,12 @@ public class CoffeeOrderBoardImpl  implements  CoffeeOrderBoard {
     }
 
     @Override
-    public void deliver(int orderNumber){
+    public Order deliver(int orderNumber){
         for (Order ord: orders) {
-            if(ord.getOrderNumber() == orderNumber){
+            if(ord.getOrderNumber() == orderNumber && orderNumber != null){
                 orders.remove(ord);
             }
-        }
+        } return orderNumber
     }
 
     @Override
