@@ -1,4 +1,4 @@
-package one;
+package task_one;
 
 public class Main {
     public static int sumArea() {

@@ -1,6 +1,4 @@
-package one;
-
-import one.Shape;
+package task_one;
 
 public class Triangle implements Shape {
     private final int sideA = 34;
