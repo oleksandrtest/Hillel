@@ -3,7 +3,7 @@ package methods;
 import java.util.*;
 
 public class Main {
-    public int countOccurance(List <?> strings, Object word) {
+    public int countOccurance(List <String> strings, Object word) {
         var count = 0;
         for (var wd: strings) {
             if (wd.equals(word)) {
@@ -21,28 +21,28 @@ public class Main {
         return list;
     }
 
-    public ArrayList<?> findUnique(List<?> nums){
+    public ArrayList<String> findUnique(List<String> nums){
 
-        var out = new ArrayList<>();
+        var list = new ArrayList<>();
         for (Object num: nums ) {
-            if(!out.contains(num)) {
-                out.add(num);
+            if(!list.contains(num)) {
+                list.add(num);
             }
         }
-        return out;
+        return list;
     };
 
-    public ArrayList<String> calcOccurance(List<?> strings) {
-        var out = new ArrayList<String>();
+    public ArrayList<String> calcOccurance(List<String> strings) {
+        var list = new ArrayList<String>();
         for (Object word: findUnique(strings)) {
-            if(!out.contains(word)){
-                out.add(word+ ": " + countOccurance(strings, word));
+            if(!list.contains(word)){
+                list.add(word+ ": " + countOccurance(strings, word));
             }
         }
-        return out;
+        return list;
     }
 
-    public ArrayList<?> findOccurance(List<?> strings) {
+    public ArrayList<String> findOccurance(List<String> strings) {
         var list = new ArrayList<>();
         for (Object word: findUnique(strings)) {
             if(!list.contains(word)){

@@ -9,25 +9,25 @@ public class PhoneBook {
     }
 
     public void add(Record record){
-        records.add(record);
+        records.add(record);        // It`s basic method add elements in the list
     };
 
     public Record find(String name){
-        for (Record rec: records) {
-            if (rec.getName().equals(name)){
-                return rec;
+        for (Record record: records) {
+            if (record.getName().equals(name)){
+                return record;
             }
         }
         return null;
     };
 
     public List<Record> findAll(String name) {
-        List<Record> record = new ArrayList<>();
-        for (Record rec: records) {
-            if(rec.getName().equals(name)){
-                record.add(rec);
+        List<Record> listRecords = new ArrayList<>();
+        for (Record record: records) {
+            if(record.getName().equals(name)){
+                listRecords.add(record);
             }
-        }   return record;
+        }   return listRecords;
 
     }
 };
