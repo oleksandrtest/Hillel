@@ -20,10 +20,11 @@ public class CoffeeOrderBoardImpl  implements  CoffeeOrderBoard {
     @Override
     public Order deliver(int orderNumber){
         for (Order ord: orders) {
-            if(ord.getOrderNumber() == orderNumber && orderNumber != null){
-                orders.remove(ord);
-            }
-        } return orderNumber
+            if(ord.getOrderNumber() == orderNumberl){
+                orders.remove(ord)
+            }  return ord;
+        } else if(ord.getOrderNumber() == null) {
+        System.out.println("Order is non present!!!") 
     }
 
     @Override
