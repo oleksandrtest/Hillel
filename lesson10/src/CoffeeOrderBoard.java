@@ -1,6 +1,6 @@
 public interface CoffeeOrderBoard {
     void add(String name);
-    void deliver();
-    void deliver(int num);
+    Order deliver();
+    Order deliver(int num);
     void  draw();
 }

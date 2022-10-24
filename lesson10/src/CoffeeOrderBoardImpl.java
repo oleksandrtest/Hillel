@@ -12,23 +12,28 @@ public class CoffeeOrderBoardImpl  implements  CoffeeOrderBoard {
     }
 
     @Override
-    public void deliver() {
+    public Order deliver() {
         Collections.sort(orders);
-        orders.remove(orders.getFirst());
+        Order firstOrder = orders.getFirst();
+        orders.remove(firstOrder);
+        return firstOrder;
     }
 
     @Override
-    public void deliver(int orderNumber){
-        for (Order ord: orders) {
-            if(ord.getOrderNumber() == orderNumber){
-                orders.remove(ord);
-            }
-        }
+    public Order deliver(int orderNumber) {
+            for (Order ord : orders) {
+                if (ord.getOrderNumber() == orderNumber) {
+                    orders.remove(ord);
+                    return ord;
+                }
+            } System.out.println("Order " + orderNumber + " not found!!!");
+        return null;
     }
 
     @Override
-    public void draw(){
-        System.out.println("===========" +"\n"+"Num" + " | " + "Name");
+    public void draw () {
+        System.out.println("===========" + "\n" + "Num" + " | " + "Name");
         orders.forEach((n) -> System.out.println(n.toString()));
     }
+
 }
