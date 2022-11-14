@@ -18,14 +18,14 @@ public class Main {
         productsByDiscountIsTrue("Book");
         // task 3.2
         productWithMinPrice("Book");
-        // task 4.2
+//        // task 4.2
         treeLastProducts();
-        // task 5.2
+//        // task 5.2
         sumProductsByYear("Phone");
-        // task 6.2
+//        // task 6.2
         productsGroupByType();
-        // task 3.3
-        productWithMinPrice("Knife");
+//        // task 3.3
+        productWithMinPrice("Toy");
 
     }
 
@@ -44,9 +44,8 @@ public class Main {
         List<Product> products = testData.stream()
                 .filter(product -> type.equals(product.getType()))
                 .filter(Product::getDiscount)
-                .toList();
+                .peek(product -> product.setPrice(product.getPrice() * 0.9)).toList();
 
-        products.forEach(product -> product.setPrice(product.getPrice() * 0.9));
         products.forEach(System.out::println);
     }
 

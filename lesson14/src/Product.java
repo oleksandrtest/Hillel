@@ -7,8 +7,7 @@ public class Product {
     private String type;
     private Double price;
     private boolean isDiscount;
-//    private LocalDateTime date = LocalDateTime.now().minus(1, ChronoUnit.YEARS);
-    private LocalDateTime date = LocalDateTime.now();
+    private final LocalDateTime createDate = LocalDateTime.now();
 
     public Product(String type, Double price, boolean isDiscount) {
         this.type = type;
@@ -45,7 +44,7 @@ public class Product {
     }
 
     public LocalDateTime getDate() {
-        return date;
+        return createDate;
     }
 
     @Override
@@ -55,7 +54,7 @@ public class Product {
                 ", type = '" + type + '\'' +
                 ", price = " + price +
                 ", isDiscount = " + isDiscount +
-                ", date = " + date +
+                ", date = " + createDate +
                 " }";
     }
 }
